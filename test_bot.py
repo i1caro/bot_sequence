@@ -27,3 +27,8 @@ def test_bot_two_steps():
     response = 4
     assert run_bots(button_sequence) == response
 
+def test_bot_break_test():
+    button_sequence = ((O,100),(B,100),(O,1),(B,1))
+    response = 201
+    assert run_bots(button_sequence) == response
+
